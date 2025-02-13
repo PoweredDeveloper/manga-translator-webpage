@@ -49,7 +49,7 @@ export default function Results() {
           {
             img_paths.map((image, index) => (
               <div key={index} className="flex flex-col gap-1">
-                <Image src={image[0]} alt="manga-image"/>
+                <Image src={image[0]} alt="manga-image" loading="lazy"/>
                 <span className="text-sm">{image[1]}</span>
                 <span className="text-[10px] italic">山田くんとLv999の恋をする ©Mashiro</span>
               </div>
